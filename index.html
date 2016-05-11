@@ -41,24 +41,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Bootstrap theme</a>
+            <a class="navbar-brand" href="#">Project Name</a> <!--TODO change project name -->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://blockbeard.github.io/">Home</a></li>
+                <li><a data-toggle="modal" data-target="#projectModal">This Project</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                       aria-expanded="false">Chris Wilson <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="https://blockbeard.github.io/#about">About me</a></li>
+                        <li><a href="https://blockbeard.github.io/#contact">Contact me</a></li>
+                        <li><a href="https://github.com/blockbeard">My Github</a></li>
+                        <li><a href="https://blockbeard.github.io/#portfolio">My code portfolio</a></li>
                     </ul>
                 </li>
             </ul>
@@ -66,6 +62,27 @@
     </div>
 </nav>
 
+<!-- project Modal -->
+<div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="aboutModalLabel">About this project</h4> <!-- TODO change modal label -->
+            </div>
+            <div class="modal-body">
+                A brief description of this project
+                <br>
+                <a href="#">Find this project on Github</a><!--TODO write a project description and add github link-->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /project Modal -->
 <div class="container theme-showcase" role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
